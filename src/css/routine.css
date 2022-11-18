@@ -1,0 +1,149 @@
+.card .toggler:hover{
+    cursor: pointer;
+}
+
+.card .toggler:hover img{
+    opacity: 0.8;
+}
+
+.toggler img{
+    width: 70%;
+    opacity: 0.5;
+    transition: all 100ms ease;
+}   
+
+main {
+    margin-left: 6%;
+    width: 94%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Source Sans';
+    position: relative;
+}
+
+main .banner {
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    box-shadow: inset 0 0 100px black;
+    z-index: -1;
+}
+
+main .banner img {
+    width: 100%;
+    z-index: inherit;
+}
+
+main .banner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    background-color: black;
+    opacity: 0.1;
+}
+
+main .titles {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 90%;
+    padding: 10px;
+    border-bottom: 3px solid var(--gray-10);
+    margin: 40px auto 10px auto;
+}
+
+main .titles .name {
+    justify-self: left;
+    color: var(--gray-9);
+}
+
+main .titles input {
+    border: none;
+    border-bottom: 2px solid var(--gray-10);
+    font-size: 30px;
+    color: var(--gray-9);
+    padding: 5px;
+}
+
+main .titles hr {
+    width: 0;
+    height: 30px;
+    margin: auto 20px;
+    border: 2px solid var(--gray-7);
+}
+
+main .titles .duration {
+    font-size: 22px;
+    color: var(--gray-8);
+}
+
+main .titles img {
+    width: 40px;
+    margin: auto 10px auto auto;
+}
+
+main .titles img:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+main .routineList {
+    width: 85%;
+    margin: 20px auto 50px auto;
+}
+
+.icons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto 60px auto;
+}
+
+.icons div {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.icons div img {
+    width: 50%;
+    height: 50%;
+}
+
+.icons .add {
+    background-color: white;
+    border: 4px solid var(--gray-9);
+}
+
+.icons .add:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.icons .trash {
+    background-color: var(--pantone-e);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+    transform: scale(1);
+}
+
+.dragging {
+    opacity: 0.5;
+    background-color: var(--gray-3) !important;
+}

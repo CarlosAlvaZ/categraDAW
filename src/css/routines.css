@@ -1,0 +1,96 @@
+.routinesMain {
+    margin-left: 6%;
+    width: 94%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Source Sans';
+    position: relative;
+}
+
+.routinesMain .banner {
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    box-shadow: inset 0 0 100px black;
+    z-index: -1;
+}
+
+.routinesMain .banner img {
+    width: 100%;
+    z-index: inherit;
+}
+
+.routinesMain .banner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    background-color: black;
+    opacity: 0.1;
+}
+
+.routinesMain > .greeting {
+    color: var(--gray-9);
+    margin: 30px auto;
+    padding: 10px 40px;
+    font-size: 22px;
+    border-bottom: 4px solid var(--gray-9);
+    display: flex;
+    justify-content: center;
+}
+
+.routinesMain > .title {
+    color: var(--gray-10);
+    width: 90%;
+    padding: 0 15px;
+    border-bottom: 4px solid var(--gray-10);
+}
+
+.cards {
+    margin: 40px auto;
+    width: 90%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-evenly;
+}
+
+.create {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.create .icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid var(--gray-9);
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: none;
+    margin: 20px auto 40px auto;
+}
+
+.create .icon:hover {
+    cursor: pointer;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+}
+
+.create .icon img {
+    width: 50%;
+    height: 50%;
+}

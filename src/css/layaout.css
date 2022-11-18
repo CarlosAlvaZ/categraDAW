@@ -1,0 +1,88 @@
+.nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 6%;
+    height: 100vh;
+    background-color: var(--pantone-c);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+.iconlike-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+.iconlike {
+    width: 50%;
+    height: 50%;
+}
+
+.nav .image div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav .image img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.nav .image {
+    width: 50px;
+    height: 50px;
+    margin: 35px auto 15px auto;
+}
+
+.nav hr {
+    width: 70%;
+    height: 0;
+    border: 2px solid white;
+    border-radius: 100px;
+    margin: 20px auto;
+}
+
+.nav .icon {
+    padding: 80px auto;
+    width: 100%;
+    color: white;
+    position: relative;
+    transition: opacity 100ms ease-in;
+}
+
+.nav .icon:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.nav .icon:hover img {
+    transform: scale(0.99);
+}
+
+.nav .icon::after{
+    transition: all 100ms ease-in;
+}
+
+.nav .icon:hover ::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: black;
+    opacity: 0.3;
+    z-index: 10000;
+}
+
+.nav .selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}

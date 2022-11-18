@@ -1,0 +1,86 @@
+.list-element[class~='new']:hover {
+    cursor: auto;
+    transform: none;
+    box-shadow: none;
+}
+
+.list-element[class~='new'] .data{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-element[class~='new'] input {
+    outline:none;
+    border: none;
+    padding: 10px;
+}
+
+.list-element[class~='new'] .new-name {
+    border-bottom: 4px solid var(--gray-10);
+    font-size: 20px;
+}
+
+.list-element[class~='new'] .new-duration {
+    border-bottom: 2px solid var(--gray-7);
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.list-element[class~='new'] .new-reference {
+    color: blue;
+    font-size: 18px;
+    height: 30px;
+    margin: 10px 0 0 40px;
+    border-bottom: 4px solid blue;
+    padding: 15px;
+}
+
+.list-element[class~='new'] .new-reference::placeholder{
+    color: rgba(0, 0, 255, 0.7);
+}
+
+.list-element[class~='new'] .buttons {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto 0 auto auto;
+}
+
+.list-element[class~='new'] .buttons div {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-element[class~='new'] .buttons div:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.list-element[class~='new'] .buttons .done {
+    background-color: var(--pantone-c);
+}
+
+.list-element button {
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+}
+
+.list-element[class~='new'] .buttons .cancel {
+    background-color: var(--pantone-e);
+}
+
+.list-element[class~='new'] .buttons div img {
+    width: 50%;
+    height: 50%;
+}

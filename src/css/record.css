@@ -1,0 +1,33 @@
+.list {
+    display: flex;
+}
+
+.chart {
+    width: 60%;
+}
+
+.data {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.data div {
+    display: flex;
+    align-items: baseline;
+    height: 60px;
+    width: 80%;
+    padding:20px;
+    border-bottom: 3px solid var(--gray-8);
+}
+
+.data h3 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.data div:last-child {
+    border-bottom: none;
+}

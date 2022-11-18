@@ -1,0 +1,59 @@
+.list-element {
+    padding: 10px 0 10px 30px;
+    border-left: 4px solid var(--gray-6);
+    border-right: 4px solid var(--gray-6);
+    border-bottom: 2px solid var(--gray-6);
+    border-top: 2px solid var(--gray-6);
+    display: flex;
+    background-color: white;
+    user-select: none;
+}
+
+.list-element:first-child{
+    border-top: 4px solid var(--gray-6);
+    border-radius: 30px 10px 0 0;
+}
+
+.list-element:last-child{
+    border-bottom: 4px solid var(--gray-6);
+    border-radius: 0 0 10px 10px;
+}
+
+.list-element:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.list-element h2 {
+    font-size: 30px;
+}
+
+.list-element h3 {
+    color: var(--gray-7);
+    font-size: 20px;
+}
+
+.list-element .play {
+    margin: auto 30px auto auto;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray-8);
+    border-radius: 50%;
+    padding: 0 0 0 5px;
+}
+
+.list-element .play:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.list-element .play img {
+    width: 40%;
+    height: 40%;
+}
+

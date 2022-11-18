@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: 'Aricum';
+    src: url(./fonts/AricumVariableConcept/AcuminVariableConcept.otf);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+    font-family: 'Source Sans';
+    src: url(./fonts/SourceSans/SourceSansVariable-Roman.otf);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+    font-family: 'Source Sans';
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+:root {
+    --gray-1: #f2f2f2;
+    --gray-2: #e6e6e6;
+    --gray-3: #cccccc;
+    --gray-4: #b3b3b3;
+    --gray-5: #999999;
+    --gray-6: #808080;
+    --gray-7: #666666;
+    --gray-8: #4d4d4d;
+    --gray-9: #333333;
+    --gray-10: #1a1a1a;
+    --pantone-a: #044019; 
+    --pantone-b: #34d96e;
+    --pantone-c: #148c3e;
+    --pantone-d: #400200;
+    --pantone-e: #8c1814;
 }

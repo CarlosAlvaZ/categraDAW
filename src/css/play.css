@@ -1,0 +1,85 @@
+.playMain {
+    width: 100%;
+    height: 100vh;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#044019+0,34d96e+100 */
+    background: #044019; /* Old browsers */
+    background: -moz-linear-gradient(left,  #044019 0%, #34d96e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #044019 0%,#34d96e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #044019 0%,#34d96e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#044019', endColorstr='#34d96e',GradientType=1 ); /* IE6-9 */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.playMain .close {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    opacity: 0.5;
+}
+
+.playMain .close:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.playMain .close img {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.nombreEjercicio {
+    font-size: 50px;
+    color: var(--gray-10);
+    font-weight: 100;
+}
+
+.contador {
+    font-family: "Source Sans";
+    font-size: 300px;
+    color: white;
+    font-weight: bold;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttons button{
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 30px;
+    color: white;
+}
+
+.buttons button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.buttons .pause {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #400200;
+}
+
+.buttons .pause img {
+    margin: auto;
+    width: 40%;
+    height: 40%;
+}
